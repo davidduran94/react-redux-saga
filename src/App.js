@@ -1,12 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 import { Container, Grid, Header, Segment, Statistic, Image, Icon, Form, Button } from 'semantic-ui-react';
+import { MainHeader } from './components/MainHeader';
  
 
 function App() {
   return (
     <Container>
-      <Header as="h1">Budget</Header>
+      <MainHeader title='Budget' />
+      
       <Statistic size="small">
         <Statistic.Label>Your Balance: </Statistic.Label>
         <Statistic.Value>2,550.53</Statistic.Value>
