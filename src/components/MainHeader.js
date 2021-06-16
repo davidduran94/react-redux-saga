@@ -1,9 +1,9 @@
 import React from 'react'
-import { Container, Grid, Header, Segment, Statistic, Image, Icon, Form, Button } from 'semantic-ui-react';
+import { Header } from 'semantic-ui-react';
 
 export const MainHeader = (props) => {
-    const {title} = props
+    const {title, type} = props
     return (
-        <Header as="h1">{title}</Header>
+        <Header as={type}>{title}</Header>
     )
 }
